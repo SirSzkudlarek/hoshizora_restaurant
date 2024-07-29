@@ -1,15 +1,16 @@
-/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Yusei+Magic&display=swap');
 
 :root {
-  --font-base: ;
-  --font-alt: ;
+  --font-base: 'Yusei Magic', sans-serif;
+  --font-alt: 'Kaisei Tokumin', serif;
 
-  --color-one: ;
-  --color_two: ;
-  --color_three: ;
-  --color_four: ;
-  --color_five: ;
-  --color_six: ;
+  --color-black: #0c0c0c;
+  --color-grey: #aaaaaa;
+  --color-white: #ffffff;
+  --color_dark-blue: #000329;
+  --color_medium-blue: #00458f;
+  --color_blue: #2f5490ff;
+  --color_golden: #e9b62bff;
 }
 
 * {

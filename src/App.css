@@ -8,7 +8,18 @@
   align-items: center;
 }
 
-.app__wrapper {
+.bg_sky-gradient {
+  background: hsla(0, 0%, 5%, 1);
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 5%, 1) 0%,
+    hsla(236, 100%, 8%, 1) 40%,
+    hsla(211, 100%, 28%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0C0C", endColorstr="#000328", GradientType=1 );
+}
+
+.hoshizora__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,8 +27,78 @@
   min-height: 100vh;
 }
 
+.custom__button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  border: 1px solid var(--color-white);
+  outline: none;
+  cursor: pointer;
+}
+
+.p__yusei-magic {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  line-height: 29.9px;
+  font-size: 23px;
+}
+
+.p__kaisei-tokumin {
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.headtext__yusei-magic {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.spoon__img {
+  width: 45px;
+}
+
+@media screen and (min-width: 2000px) {
+  .p__yusei-magic {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  .p__kaisei-tokumin {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .headtext__yusei-magic {
+    font-size: 150px;
+    line-height: 210px;
+  }
+
+  .spoon__img {
+    width: 80px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
-  .app__wrapper {
+  .hoshizora__wrapper {
     flex-direction: column;
   }
 }
@@ -31,5 +112,28 @@
 @media screen and (max-width: 650px) {
   .section__padding {
     padding: 4rem 2rem;
+  }
+
+  .p__yusei-magic {
+    font-size: 21px;
+  }
+
+  .p__kaisei-tokumin {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .p__kaisei-tokumin {
+    font-size: 12px;
+  }
+
+  .p__yusei-magic {
+    font-size: 19px;
+  }
+
+  .headtext__yusei-magic {
+    font-size: 45px;
+    line-height: 70px;
   }
 }

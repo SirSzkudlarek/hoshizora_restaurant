@@ -1,0 +1,14 @@
+.hoshizora__stars-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hoshizora__star {
+  position: absolute;
+}
+
+.hoshizora__star-one {
+  top: 15%;
+  right: 49%;
+}

@@ -1,0 +1,55 @@
+.hoshizora__navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--color-black);
+}
+
+.hoshizora__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hoshizora__navbar-logo img {
+  width: 150px;
+}
+
+.hoshizora__navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.hoshizora__navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.hoshizora__navbar-links li:hover {
+  color: var(--color-grey);
+}
+
+.hoshizora__navbar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hoshizora__navbar-login a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.hoshizora__navbar-login a:hover {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.hoshizora__navbar-login div {
+  width: 1px;
+  height: 30px;
+  background: var(--color-grey);
+}
