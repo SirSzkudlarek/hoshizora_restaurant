@@ -6,9 +6,124 @@
 
 .hoshizora__star {
   position: absolute;
+  width: 22px;
 }
 
 .hoshizora__star-one {
   top: 15%;
   right: 49%;
+}
+
+.hoshizora__star-two {
+  top: 36%;
+  right: 64%;
+}
+
+.hoshizora__star-three {
+  top: 54%;
+  right: 46%;
+}
+
+.hoshizora__star-four {
+  top: 10%;
+  right: 91%;
+}
+
+.hoshizora__star-five {
+  top: 44%;
+  right: 82%;
+}
+
+.hoshizora__star-six {
+  top: 31%;
+  right: 6%;
+}
+
+.hoshizora__star-seven {
+  top: 31%;
+  right: 6%;
+}
+
+.hoshizora__star-eight {
+  top: 12%;
+  right: 4%;
+}
+
+.hoshizora__star-nine {
+  top: 1%;
+  right: 11%;
+}
+
+.hoshizora__star-ten {
+  top: 31%;
+  right: 89%;
+  width: 28px;
+}
+
+.hoshizora__star-eleven {
+  top: 40%;
+  right: 44%;
+}
+
+.hoshizora__star-tveleve {
+  top: 29%;
+  right: 54%;
+}
+
+.hoshizora__star-thirteen {
+  top: 1%;
+  right: 70%;
+}
+
+.hoshizora__star-fourteen {
+  top: 20%;
+  right: 10%;
+}
+
+.hoshizora__star-fiveteen {
+  top: 16%;
+  right: 61%;
+  width: 26px;
+}
+
+.hoshizora__star-sixteen {
+  top: 23%;
+  right: 71%;
+}
+
+.hoshizora__star-seventeen {
+  top: 1%;
+  right: 30%;
+}
+
+.hoshizora__star-eightteen {
+  top: 1%;
+  right: 81%;
+}
+
+.hoshizora__star-nineteen {
+  top: 58%;
+  right: 68%;
+}
+
+.hoshizora__star-tventy {
+  top: 48%;
+  right: 9%;
+}
+
+.hoshizora__star-tventy-one {
+  top: 47%;
+  right: 97%;
+}
+
+.hoshizora__star-tventy-two {
+  top: 47%;
+  right: 97%;
+  width: 10px;
+}
+
+.hoshizora__star-tventy-three {
+  top: 12%;
+  right: 78%;
+  width: 12px;
 }
