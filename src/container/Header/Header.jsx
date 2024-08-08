@@ -25,8 +25,8 @@ const Header = () => {
         <img src={images.headerIntroduction} alt='header-img' />
       </div>
 
-      <MouseParallax strength={0.015} isAbsolutelyPositioned >
-        <StarsBackground style={{ position: 'absolute', width: '100%'}}/>
+      <MouseParallax  strength={0.015} isAbsolutelyPositioned >
+        <StarsBackground className="hoshizora__stars-parallax" mobile={false} style={{ position: 'absolute', width: '100%'}}/>
       </MouseParallax>
     </header>
   )

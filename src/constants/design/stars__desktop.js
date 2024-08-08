@@ -1,6 +1,6 @@
 import images from '../images';
 
-const stars = [
+const stars__desktop = [
   {
     id: 1,
     image: images.sparkle1,
@@ -151,5 +151,4 @@ const stars = [
   },
 ];
 
-// eslint-disable-next-line
-export default stars;
+export default stars__desktop;
