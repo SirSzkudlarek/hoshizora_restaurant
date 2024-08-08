@@ -52,6 +52,11 @@
   .hoshizora__header-h1 {
     font-size: 90px;
   }
+
+  .hoshizora__header-img img {
+    width: 70%;
+    padding-top: 4rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
