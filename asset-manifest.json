@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/hoshizora_restaurant/static/css/main.5d8e98b4.css",
+    "main.css": "/hoshizora_restaurant/static/css/main.518b9863.css",
     "main.js": "/hoshizora_restaurant/static/js/main.97a64ef3.js",
     "static/media/headerIntroduction.png": "/hoshizora_restaurant/static/media/headerIntroduction.4f1b2929071575895f4d.png",
     "index.html": "/hoshizora_restaurant/index.html"
   },
   "entrypoints": [
-    "static/css/main.5d8e98b4.css",
+    "static/css/main.518b9863.css",
     "static/js/main.97a64ef3.js"
   ]
 }
