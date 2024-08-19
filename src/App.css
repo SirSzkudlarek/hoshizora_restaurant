@@ -10,13 +10,12 @@
 
 .bg_sky-gradient {
   background: hsla(0, 0%, 5%, 1);
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 5%, 1) 0%,
-    hsla(236, 100%, 8%, 1) 40%,
-    hsla(211, 100%, 28%, 1) 100%
-  );
+  background: linear-gradient(180deg, hsla(0, 0%, 5%, 1) 0%, hsla(236, 100%, 8%, 1) 40%, hsla(211, 100%, 28%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0C0C", endColorstr="#000328", GradientType=1 );
+}
+
+.bg_dark-blue {
+  background-color: var(--color_dark-blue);
 }
 
 .hoshizora__wrapper {
@@ -28,18 +27,26 @@
 }
 
 .custom__button {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color_dark-blue);
   font-family: var(--font-base);
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 28px;
   font-size: 16px;
   padding: 0.5rem 1.5rem;
+  width: max-content;
   border-radius: 1px;
-  border: 1px solid var(--color-white);
+  border: 2px solid var(--color_golden);
   outline: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom__button:hover {
+  color: var(--color-white);
+  background-color: var(--color_dark-blue);
+  border-color: var(--color-white);
 }
 
 .p__yusei-magic {
@@ -65,7 +72,7 @@
 
 .headtext__yusei-magic {
   font-family: var(--font-base);
-  color: var(--color-golden);
+  color: var(--color-white);
   font-size: 64px;
   line-height: 83.2px;
   letter-spacing: 0.04em;

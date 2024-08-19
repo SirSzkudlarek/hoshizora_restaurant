@@ -119,6 +119,7 @@
 
   .hoshizora__navbar-smallscreen {
     display: flex;
+    align-items: center;
   }
 }
 

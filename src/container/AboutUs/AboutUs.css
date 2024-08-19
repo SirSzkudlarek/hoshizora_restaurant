@@ -1,0 +1,67 @@
+.hoshizora__aboutUs {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../assets/bg-sky.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: 2px solid var(--color_golden);
+}
+
+.hoshizora__aboutUs-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.hoshizora__aboutUs-content_about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+  gap: 2rem;
+  text-align: right;
+}
+
+.hoshizora__aboutUs-content_about img {
+  transform: rotate(180deg);
+}
+
+.hoshizora__aboutUs-content_bowl {
+  flex: 1;
+  margin: 0 5rem;
+}
+
+.bowl-img {
+  width: 100%;
+}
+
+.hoshizora__aboutUs-content_history {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  gap: 2rem;
+}
+
+.hoshizora__aboutUs-headtext {
+  color: var(--color_golden);
+}
+
+@media screen and (max-width: 900px) {
+  .hoshizora__aboutUs-content {
+    flex-direction: column;
+  }
+
+  .hoshizora__aboutUs-content_bowl {
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hoshizora__aboutUs-content_about {
+    gap: 1rem;
+  }
+
+  .hoshizora__aboutUs-content_history {
+    gap: 1rem;
+  }
+}
