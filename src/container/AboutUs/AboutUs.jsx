@@ -1,5 +1,6 @@
 import React from 'react';
 import { images } from '../../constants';
+import Rings from '../../components/design/Rings';
 
 import './AboutUs.css';
 
@@ -20,6 +21,7 @@ const AboutUs = () => {
 
         <div className="hoshizora__aboutUs-content_bowl flex_center">
           <img className="bowl-img" src={images.aboutUsPlate} alt="bowl"></img>
+          <Rings />
         </div>
 
         <div className="hoshizora__aboutUs-content_history">

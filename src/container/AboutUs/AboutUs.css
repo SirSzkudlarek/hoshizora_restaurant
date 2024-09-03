@@ -8,6 +8,8 @@
 }
 
 .hoshizora__aboutUs-content {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: row;
 }
@@ -26,12 +28,13 @@
 }
 
 .hoshizora__aboutUs-content_bowl {
+  position: relative;
   flex: 1;
   margin: 0 5rem;
 }
 
 .bowl-img {
-  width: 100%;
+  width: 130%;
 }
 
 .hoshizora__aboutUs-content_history {
@@ -46,11 +49,17 @@
   color: var(--color_golden);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
   .hoshizora__aboutUs-content {
     flex-direction: column;
   }
 
+  .bowl-img {
+    width: 115%;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .hoshizora__aboutUs-content_bowl {
     margin: 4rem 0;
   }

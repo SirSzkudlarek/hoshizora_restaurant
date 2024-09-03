@@ -1,0 +1,91 @@
+.hoshizora__rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  aspect-ratio: 1;
+  border: solid 2px #ecc96b7a;
+  border-radius: 9999px;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+.hoshizora__rings-big {
+  width: 51.375rem;
+}
+
+.hoshizora__rings-medium {
+  width: 36.125rem;
+}
+
+.hoshizora__rings-small {
+  width: 23.125rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .hoshizora__rings-big {
+    width: 42.53rem;
+  }
+
+  .hoshizora__rings-medium {
+    width: 31.093rem;
+  }
+
+  .hoshizora__rings-small {
+    width: 21.343rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .hoshizora__rings-big {
+    width: 24.265rem;
+  }
+
+  .hoshizora__rings-medium {
+    width: 18.546rem;
+  }
+
+  .hoshizora__rings-small {
+    width: 13.671rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hoshizora__rings-big {
+    width: 22.265rem;
+  }
+
+  .hoshizora__rings-medium {
+    width: 16.546rem;
+  }
+
+  .hoshizora__rings-small {
+    width: 11.671rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hoshizora__rings-big {
+    width: 20.265rem;
+  }
+
+  .hoshizora__rings-medium {
+    width: 14.546rem;
+  }
+
+  .hoshizora__rings-small {
+    width: 9.671rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hoshizora__rings-big {
+    width: 19.265rem;
+  }
+
+  .hoshizora__rings-medium {
+    width: 13.546rem;
+  }
+
+  .hoshizora__rings-small {
+    width: 8.671rem;
+  }
+}
