@@ -7,6 +7,7 @@
   border-radius: 9999px;
   transform: translateX(-50%) translateY(-50%);
   z-index: -1;
+  pointer-events: none;
 }
 
 .hoshizora__rings-big {

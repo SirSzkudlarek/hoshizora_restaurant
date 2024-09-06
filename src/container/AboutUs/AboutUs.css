@@ -5,6 +5,8 @@
   background-size: cover;
   background-position: center;
   border-top: 2px solid var(--color_golden);
+  border-bottom: 2px solid var(--color_golden);
+  overflow: hidden;
 }
 
 .hoshizora__aboutUs-content {
@@ -35,6 +37,7 @@
 
 .bowl-img {
   width: 130%;
+  pointer-events: none;
 }
 
 .hoshizora__aboutUs-content_history {
