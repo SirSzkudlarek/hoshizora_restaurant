@@ -1,0 +1,57 @@
+.hoshizora__menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0 2rem;
+}
+
+.hoshizora__menu-list_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid #ecc96b7a;
+  padding: 0.5rem;
+}
+
+.hoshizora__menu-list-name {
+  width: 300px;
+}
+
+.hoshizora__menu-list-description p {
+  font-size: 12px;
+  line-height: normal;
+}
+
+.hoshizora__menu-list-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.star__line {
+  width: 100px;
+  height: 26px;
+  position: relative;
+}
+
+.star__line-line {
+  width: 100px;
+  height: 1px;
+  background-color: var(--color_golden);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.star__line-star {
+  width: 27px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+}

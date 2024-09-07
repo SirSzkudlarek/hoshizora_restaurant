@@ -1,0 +1,40 @@
+.hoshizora__menu {
+  background-color: var(--color-black);
+  flex-direction: column;
+}
+
+.hoshizora__menu h2 {
+  margin-bottom: 5rem;
+}
+
+.hoshizora__menu-bento {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hoshizora__menu-bento_col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hoshizora__menu-bento_col:last-of-type {
+  margin-top: 5rem;
+}
+
+.hoshizora__menu-bento_box {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 600px;
+  padding-bottom: 2rem;
+  border: 2px solid #ecc96b7a;
+  border-radius: 10px;
+}
+
+.hoshizora__menu-bento_box h3 {
+  text-align: center;
+  margin: 2rem 0;
+}
