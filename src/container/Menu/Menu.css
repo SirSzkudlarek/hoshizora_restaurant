@@ -29,12 +29,56 @@
   flex-direction: column;
   max-width: 600px;
   width: 600px;
-  padding-bottom: 2rem;
+  padding: 2rem 0 2rem 0;
   border: 2px solid #ecc96b7a;
   border-radius: 10px;
 }
 
 .hoshizora__menu-bento_box h3 {
   text-align: center;
-  margin: 2rem 0;
+}
+
+.hoshizora__menu-bento_box .p__yusei-magic {
+  margin: 0.5rem 0 2rem 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .hoshizora__menu-bento_box {
+    width: 450px;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+  .hoshizora__menu-bento_col:last-of-type {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hoshizora__menu-bento {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hoshizora__menu-bento_col:last-of-type {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hoshizora__menu {
+    padding: 4rem 0.5rem !important;
+  }
+
+  .hoshizora__menu h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .hoshizora__menu-bento_box {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .hoshizora__menu-bento_box .p__yusei-magic {
+    margin: 0.5rem 0 1rem 0;
+  }
 }

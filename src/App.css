@@ -79,6 +79,10 @@
   text-transform: capitalize;
 }
 
+.hoshizora__japanease-text {
+  line-height: 18px;
+}
+
 .spoon__img {
   width: 45px;
 }
