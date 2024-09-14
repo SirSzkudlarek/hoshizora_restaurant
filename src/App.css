@@ -2,6 +2,81 @@
   padding: 4rem 6rem;
 }
 
+.vertical__line {
+  position: absolute;
+  min-height: 100%;
+  width: 2px;
+  background-color: #ecc96b7a;
+  top: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.vertical__line-left {
+  left: 7.5%;
+}
+
+.vertical__line-right {
+  right: 7.5%;
+}
+
+.vertical__star-small-top {
+  position: absolute;
+  width: 36px;
+  top: 25%;
+  left: 0;
+  right: 0;
+  transform: translateX(-48%) translateY(-50%);
+}
+
+.vertical__star-small-bottom {
+  position: absolute;
+  width: 36px;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  transform: translateX(-48%) translateY(-50%);
+}
+
+.vertical__star-big {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateX(-48%) translateY(-50%);
+}
+
+.section__gradient-wrapper {
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+  opacity: 0.5;
+  width: 26.625rem;
+  height: 26.625rem;
+  z-index: 1;
+}
+
+.top__gradient {
+  top: 0;
+  left: -10rem;
+}
+
+.bottom__gradient {
+  bottom: 0;
+  right: -10rem;
+}
+
+.section__gradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 79.5625rem;
+  width: 79.5625rem;
+  height: 88.5625rem;
+}
+
 .flex_center {
   display: flex;
   justify-content: center;
@@ -10,7 +85,7 @@
 
 .bg_sky-gradient {
   background: hsla(0, 0%, 5%, 1);
-  background: linear-gradient(180deg, hsla(0, 0%, 5%, 1) 0%, hsla(236, 100%, 8%, 1) 40%, hsla(211, 100%, 28%, 1) 100%);
+  background: linear-gradient(180deg, hsla(0, 0%, 5%, 1) 0%, hsla(236, 100%, 8%, 1) 40%, hsl(211deg 32.95% 2.4%) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0C0C", endColorstr="#000328", GradientType=1 );
 }
 
@@ -123,6 +198,37 @@
 @media screen and (max-width: 650px) {
   .section__padding {
     padding: 4rem 2rem;
+  }
+
+  .section__gradient-wrapper {
+    width: 8.625rem;
+    height: 8.625rem;
+  }
+
+  .section__gradient {
+    max-width: 59.5625rem;
+    width: 59.5625rem;
+    height: 38.5625rem;
+  }
+
+  .vertical__line-left {
+    left: 0;
+  }
+
+  .vertical__line-right {
+    right: 0;
+  }
+
+  .vertical__star-small-top {
+    width: 26px;
+  }
+
+  .vertical__star-small-bottom {
+    width: 26px;
+  }
+
+  .vertical__star-big {
+    width: 36px;
   }
 
   .p__yusei-magic {

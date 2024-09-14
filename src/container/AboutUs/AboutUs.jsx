@@ -40,7 +40,6 @@ const AboutUs = () => {
     scrollTrigger: {
       trigger: '.hoshizora__aboutUs',
       start: '-=200px top',
-      markers: true,
     },
   };
 

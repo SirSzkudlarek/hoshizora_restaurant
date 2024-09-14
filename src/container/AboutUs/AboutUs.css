@@ -4,8 +4,8 @@
   background-image: url(../../assets/bg-sky.jpg);
   background-size: cover;
   background-position: center;
-  border-top: 2px solid var(--color_golden);
-  border-bottom: 2px solid var(--color_golden);
+  border-top: 2px solid #ecc96b7a;
+  border-bottom: 2px solid #ecc96b7a;
   overflow: hidden;
 }
 

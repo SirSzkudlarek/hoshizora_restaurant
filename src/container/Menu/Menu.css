@@ -1,10 +1,13 @@
 .hoshizora__menu {
   background-color: var(--color-black);
   flex-direction: column;
+  position: relative;
+  overflow-x: clip;
 }
 
 .hoshizora__menu h2 {
   margin-bottom: 5rem;
+  z-index: 5;
 }
 
 .hoshizora__menu-bento {
@@ -32,6 +35,8 @@
   padding: 2rem 0 2rem 0;
   border: 2px solid #ecc96b7a;
   border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px #26283f;
+  z-index: 5;
 }
 
 .hoshizora__menu-bento_box h3 {

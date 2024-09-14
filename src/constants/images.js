@@ -8,6 +8,8 @@ import sparkle4 from '../assets/sparkle4-2.png';
 import sparkle5 from '../assets/sparkle5-2.png';
 import oldRestaurant from '../assets/old__restaurant.jpg';
 import aboutUsPlate from '../assets/aboutUsPlate.png';
+import sectionGradient from '../assets/section__gradient.png';
+import sectionGradient2 from '../assets/section__gradient2.png';
 
 // eslint-disable-next-line
 export default {
@@ -21,4 +23,6 @@ export default {
   sparkle4,
   sparkle5,
   spoon,
+  sectionGradient,
+  sectionGradient2,
 };
