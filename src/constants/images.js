@@ -10,6 +10,8 @@ import oldRestaurant from '../assets/old__restaurant.jpg';
 import aboutUsPlate from '../assets/aboutUsPlate.png';
 import sectionGradient from '../assets/section__gradient.png';
 import sectionGradient2 from '../assets/section__gradient2.png';
+import menuAccent from '../assets/menu__accent.png';
+import chef from '../assets/chef.jpg';
 
 // eslint-disable-next-line
 export default {
@@ -25,4 +27,6 @@ export default {
   spoon,
   sectionGradient,
   sectionGradient2,
+  menuAccent,
+  chef,
 };

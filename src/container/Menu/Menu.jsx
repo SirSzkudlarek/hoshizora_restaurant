@@ -47,6 +47,7 @@ const Menu = () => {
   return (
     <div className="hoshizora__menu flex_center section__padding" id="menu">
       <h2 className="headtext__yusei-magic">Our Special Menu</h2>
+      <img className="hoshizora__menu-accent" src={images.menuAccent} alt="menu__accent"></img>
 
       <div className="hoshizora__menu-bento">
         <div className="hoshizora__menu-bento_col">

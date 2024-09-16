@@ -6,8 +6,13 @@
 }
 
 .hoshizora__menu h2 {
-  margin-bottom: 5rem;
   z-index: 5;
+  margin-bottom: 2rem;
+}
+
+.hoshizora__menu-accent {
+  margin-bottom: 5rem;
+  width: 300px;
 }
 
 .hoshizora__menu-bento {
@@ -15,6 +20,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hoshizora__menu-bento_col {
@@ -48,6 +54,10 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .hoshizora__menu-bento {
+    gap: 1rem;
+  }
+
   .hoshizora__menu-bento_box {
     width: 450px;
     padding: 1.5rem 0 1.5rem 0;
@@ -85,5 +95,16 @@
 
   .hoshizora__menu-bento_box .p__yusei-magic {
     margin: 0.5rem 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hoshizora__menu h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .hoshizora__menu-accent {
+    margin-bottom: 3rem;
+    width: 250px;
   }
 }

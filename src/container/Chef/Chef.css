@@ -1,0 +1,28 @@
+.hoshizora__chef {
+  position: relative;
+  background-image: url(../../assets/fish__scale-background2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  border-top: 2px solid #ecc96b7a;
+  border-bottom: 2px solid #ecc96b7a;
+  display: none !important;
+}
+
+.hoshizora__chef::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background: rgb(12, 12, 12);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(10, 10, 75, 0) 20%,
+    rgba(9, 9, 121, 0) 50%,
+    rgba(11, 11, 47, 0) 80%,
+    rgba(12, 12, 12, 1) 100%
+  );
+}

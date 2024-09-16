@@ -183,9 +183,63 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .vertical__line-left {
+    left: 3.5%;
+  }
+
+  .vertical__line-right {
+    right: 3.5%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .vertical__star-small-top {
+    width: 26px;
+  }
+
+  .vertical__star-small-bottom {
+    width: 26px;
+  }
+
+  .vertical__star-big {
+    width: 36px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .hoshizora__wrapper {
     flex-direction: column;
+  }
+
+  .vertical__line-left {
+    left: 2.5%;
+  }
+
+  .vertical__line-right {
+    right: 2.5%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .vertical__line-left {
+    left: 7.5%;
+  }
+
+  .vertical__line-right {
+    right: 7.5%;
+  }
+
+  .vertical__star-small-top {
+    width: 36px;
+  }
+
+  .vertical__star-small-bottom {
+    width: 36px;
+  }
+
+  .vertical__star-big {
+    width: initial;
   }
 }
 
