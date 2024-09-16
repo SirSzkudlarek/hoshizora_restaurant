@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/hoshizora_restaurant/static/css/main.07e74c89.css",
-    "main.js": "/hoshizora_restaurant/static/js/main.566f6a16.js",
+    "main.css": "/hoshizora_restaurant/static/css/main.d09b6784.css",
+    "main.js": "/hoshizora_restaurant/static/js/main.8aeca9f0.js",
     "static/media/headerIntroduction.png": "/hoshizora_restaurant/static/media/headerIntroduction.4f1b2929071575895f4d.png",
     "static/media/aboutUsPlate.png": "/hoshizora_restaurant/static/media/aboutUsPlate.f6fa2766b9e587013f59.png",
     "static/media/section__gradient.png": "/hoshizora_restaurant/static/media/section__gradient.ba4a5ff6e10686c85a04.png",
+    "static/media/chef.jpg": "/hoshizora_restaurant/static/media/chef.ddd095671f264f33ef55.jpg",
+    "static/media/fish__scale-background2.png": "/hoshizora_restaurant/static/media/fish__scale-background2.a392eed557e6dca1188c.png",
     "static/media/old__restaurant.jpg": "/hoshizora_restaurant/static/media/old__restaurant.24d10017b948327440b1.jpg",
     "static/media/section__gradient2.png": "/hoshizora_restaurant/static/media/section__gradient2.8f9411a072b504a193b4.png",
+    "static/media/menu__accent.png": "/hoshizora_restaurant/static/media/menu__accent.358483ad64c98404afd6.png",
     "static/media/bg-sky.jpg": "/hoshizora_restaurant/static/media/bg-sky.9c3b2223328fb0ab152e.jpg",
     "index.html": "/hoshizora_restaurant/index.html"
   },
   "entrypoints": [
-    "static/css/main.07e74c89.css",
-    "static/js/main.566f6a16.js"
+    "static/css/main.d09b6784.css",
+    "static/js/main.8aeca9f0.js"
   ]
 }
