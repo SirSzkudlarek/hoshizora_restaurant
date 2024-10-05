@@ -1,13 +1,58 @@
 .hoshizora__chef {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-image: url(../../assets/fish__scale-background2.png);
+  background-image: url(../../assets/chef__background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
   border-top: 2px solid #ecc96b7a;
   border-bottom: 2px solid #ecc96b7a;
-  display: none !important;
+}
+
+.hoshizora__chef-title {
+  position: relative;
+  margin: 1rem 0 5rem 0;
+}
+
+.hoshizora__chef-title h1 {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 0.75rem;
+}
+
+.hoshizora__chef-title_accent {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #ecc96b7a;
+  right: 50%;
+  transform: translateX(50%) translateY(50%) scaleX(1.25);
+  z-index: 4;
+  border-radius: 50%;
+}
+
+.hoshizora__chef-accent_star {
+  width: 50px;
+  height: 56px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+}
+
+.hoshizora__chef-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  position: relative;
+  z-index: 5;
 }
 
 .hoshizora__chef::after {
@@ -25,4 +70,154 @@
     rgba(11, 11, 47, 0) 80%,
     rgba(12, 12, 12, 1) 100%
   );
+}
+
+.hoshizora__chef-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hoshizora__chef-img_wrapper {
+  position: relative;
+}
+
+.hoshizora__chef-img {
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.hoshizora__chef-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0 0 0;
+  padding: 1rem 0 1.5rem 0;
+  background-color: transparent;
+  background-image: linear-gradient(220deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hoshizora__chef-name p {
+  margin-bottom: 0.5rem;
+}
+
+.hoshizora__chef-bio {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: transparent;
+  background-image: linear-gradient(260deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.4));
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  background-size: 30px;
+  padding: 1.5rem 1.5rem;
+  border-radius: 20px;
+  max-width: 650px;
+}
+
+.hoshizora__chef-accent_line {
+  position: relative;
+  background-color: #ecc96b7a;
+  height: 2px;
+  width: 55%;
+  margin: 1.5rem auto;
+}
+
+.hoshizora__chef-accent_line::after {
+  content: url('../../assets/sparkle1-2.png');
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-49%) scale(0.65);
+}
+
+.hoshizora__chef-bio h2 {
+  text-align: center;
+}
+
+.hoshizora__chef-bio p,
+.hoshizora__chef-name p {
+  font-size: 18px;
+}
+
+.hoshizora__chef-bio p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .hoshizora__chef-title {
+    margin: 1rem 0 8rem 0;
+  }
+
+  .hoshizora__chef-title h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .hoshizora__chef-content {
+    gap: 5rem;
+  }
+
+  .hoshizora__chef-accent_line::after {
+    transform: translateX(50%) translateY(-48%) scale(0.75);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hoshizora__chef-content {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hoshizora__chef-title {
+    margin: 1rem 0 5rem 0;
+  }
+
+  .hoshizora__chef-title h1 {
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .hoshizora__chef-title_accent {
+    transform: translateX(50%) translateY(50%);
+  }
+
+  .hoshizora__chef-accent_star {
+    width: 44px;
+    height: 50px;
+  }
+
+  .hoshizora__chef-img {
+    width: 250px;
+  }
+
+  .hoshizora__chef-name {
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  .hoshizora__chef-name p {
+    margin-bottom: 0;
+  }
+
+  .hoshizora__chef-bio p,
+  .hoshizora__chef-name p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hoshizora__chef-bio p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .hoshizora__chef-accent_line::after {
+    transform: translateX(50%) translateY(-48%) scale(0.5);
+  }
 }

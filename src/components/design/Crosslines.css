@@ -1,0 +1,38 @@
+.hoshizora__crossline {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.hoshizora__crossline-line {
+  position: absolute;
+  background-color: #ecc96b7a;
+}
+
+.hoshizora__crossline-vertical {
+  top: 50%;
+  right: 75%;
+  width: 2px;
+  height: 120%;
+  transform: translateY(-50%);
+}
+
+.hoshizora__crossline-vertical:first-child {
+  right: 25%;
+}
+
+.hoshizora__crossline-horizontal {
+  top: 75%;
+  right: 50%;
+  width: 125%;
+  height: 2px;
+  transform: translateX(50%);
+}
+
+.hoshizora__crossline-horizontal:nth-child(4) {
+  top: 50%;
+}
+
+.hoshizora__crossline-horizontal:last-child {
+  top: 25%;
+}

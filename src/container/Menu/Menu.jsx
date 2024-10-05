@@ -51,24 +51,36 @@ const Menu = () => {
 
       <div className="hoshizora__menu-bento">
         <div className="hoshizora__menu-bento_col">
-          <div className="hoshizora__menu-bento_box bg_sky-gradient" ref={(el) => (bentoBoxRefs.current[0] = el)}>
+          <div
+            className="hoshizora__menu-bento_box lighting-border bg_sky-gradient"
+            ref={(el) => (bentoBoxRefs.current[0] = el)}
+          >
             <h3 className="hoshizora__japanease-text p__kaisei-tokumin">A5ランクの牛肉</h3>
             <h3 className="p__yusei-magic">Beef (A5)</h3>
             <MenuList category={beefs} />
           </div>
-          <div className="hoshizora__menu-bento_box bg_sky-gradient" ref={(el) => (bentoBoxRefs.current[1] = el)}>
+          <div
+            className="hoshizora__menu-bento_box lighting-border bg_sky-gradient"
+            ref={(el) => (bentoBoxRefs.current[1] = el)}
+          >
             <h3 className="hoshizora__japanease-text p__kaisei-tokumin">ラーメン</h3>
             <h3 className="p__yusei-magic">Ramen</h3>
             <MenuList category={ramen} />
           </div>
         </div>
         <div className="hoshizora__menu-bento_col">
-          <div className="hoshizora__menu-bento_box bg_sky-gradient" ref={(el) => (bentoBoxRefs.current[2] = el)}>
+          <div
+            className="hoshizora__menu-bento_box lighting-border bg_sky-gradient"
+            ref={(el) => (bentoBoxRefs.current[2] = el)}
+          >
             <h3 className="hoshizora__japanease-text p__kaisei-tokumin">刺身</h3>
             <h3 className="p__yusei-magic">Sashimi</h3>
             <MenuList category={sashimi} />
           </div>
-          <div className="hoshizora__menu-bento_box bg_sky-gradient" ref={(el) => (bentoBoxRefs.current[3] = el)}>
+          <div
+            className="hoshizora__menu-bento_box lighting-border bg_sky-gradient"
+            ref={(el) => (bentoBoxRefs.current[3] = el)}
+          >
             <h3 className="hoshizora__japanease-text p__kaisei-tokumin">シーフード</h3>
             <h3 className="p__yusei-magic">Seafood</h3>
             <MenuList category={sea__food} />
