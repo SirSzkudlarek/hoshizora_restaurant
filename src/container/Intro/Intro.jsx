@@ -17,7 +17,7 @@ const Intro = () => {
     }
   };
   return (
-    <div className="hoshizora__video">
+    <div className="hoshizora__video" id="intro">
       <video src={food} ref={vidRef} type="video/mp4" loop controls={false} muted />
       <div
         className="hoshizora__video-overlay flex_center"

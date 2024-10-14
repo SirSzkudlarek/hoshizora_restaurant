@@ -1,0 +1,65 @@
+.hoshizora__laurels {
+  background-color: var(--color-black);
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+.hoshizora__laurels h1 {
+  margin-bottom: 5rem;
+}
+
+.hoshizora__laurels-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.hoshizora__laurels-gallery {
+  position: relative;
+  z-index: 5;
+  --s: 15rem;
+  display: grid;
+  grid: auto-flow var(--s) / repeat(2, var(--s));
+  place-items: center;
+  margin: calc(var(--s) / 2);
+  transform: rotate(45deg);
+}
+
+.hoshizora__laurels-gallery > img {
+  position: relative;
+  z-index: 5;
+  width: 120%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: grayscale(0.8) hue-rotate(-120deg);
+  transform: scale(var(--_t, 1)) rotate(-45deg);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.hoshizora__laurels-gallery > img:hover {
+  filter: grayscale(0);
+  --_t: 1.15;
+}
+
+.hoshizora__laurels-gallery .section__gradient-wrapper {
+  opacity: 0.2;
+}
+
+.hoshizora__laurels-gallery .section__gradient-wrapper .section__gradient {
+  width: 42.5625rem;
+  height: 40.5625rem;
+  top: 45%;
+  left: 51%;
+}
+
+.hoshizora__laurels-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 650px;
+}
