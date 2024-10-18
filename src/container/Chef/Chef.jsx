@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import './Chef.css';
 import { images } from '../../constants';
 import Crossline from '../../components/design/Crosslines';
+import { MainHeading } from '../../components';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,9 +12,6 @@ const Chef = () => {
   const chef__img = useRef();
   const chef__name = useRef();
   const chef__bio = useRef();
-  const chef__title = useRef();
-  const chef__title_accent = useRef();
-  const chef__title_accent_star = useRef();
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -28,28 +26,18 @@ const Chef = () => {
     gsap.from(chef__img.current, { opacity: 0, duration: 3, delay: 0.5, ...animsScrollTrigger });
     gsap.from(chef__name.current, { opacity: 0, duration: 3, y: 100, ...animsScrollTrigger });
     gsap.from(chef__bio.current, { opacity: 0, duration: 3, y: 100, ...animsScrollTrigger });
-
-    const title_anim = gsap.timeline({ ...animsScrollTrigger });
-    title_anim.from(chef__title_accent.current, { x: 100, opacity: 0, duration: 1.5 });
-    title_anim.from(chef__title_accent_star.current, { scale: 0.75, duration: 1 });
-    title_anim.from(chef__title.current, { y: 100, opacity: 0, delay: 1, duration: 1.75 });
   });
 
   return (
     <div className="hoshizora__chef section__padding" id="chef">
-      <div className="hoshizora__chef-title">
-        <h1 ref={chef__title} className="headtext__yusei-magic">
-          Traditional Chef
-        </h1>
-        <div ref={chef__title_accent} className="hoshizora__chef-title_accent">
-          <img
-            ref={chef__title_accent_star}
-            className="hoshizora__chef-accent_star"
-            src={images.sparkle1}
-            alt="title__accent_star"
-          ></img>
-        </div>
-      </div>
+      <MainHeading
+        heading="Traditional Chef"
+        target={'.hoshizora__chef'}
+        accent_line_duration={1.5}
+        star_duration={1}
+        heading_duration={1.75}
+        title_delay={1}
+      />
       <div className="hoshizora__chef-content">
         <div className="hoshizora__chef-image">
           <div className="hoshizora__chef-img_wrapper">

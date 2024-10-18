@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Observer } from 'gsap/Observer';
 
 import './Laurels.css';
+import { MainHeading } from '../../components';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,9 +21,6 @@ const Laurels = () => {
   const { introduction, the_tabelog, mechelin, gault_millau, taste_of_japan } = laurels__content;
   const [award, SetAward] = useState(introduction);
 
-  const laurels_titleRef = useRef();
-  const laurels__title_accent = useRef();
-  const laurels__title_accent_star = useRef();
   const laurels_contentRef = useRef();
   const dateClan_logoRef = useRef();
   const tabelog_imgRef = useRef();
@@ -57,10 +55,7 @@ const Laurels = () => {
     });
 
     const awardsContentAnim = gsap.timeline({ ...animsScrollTrigger });
-    awardsContentAnim.from(laurels__title_accent.current, { x: -100, opacity: 0, duration: 0.5 });
-    awardsContentAnim.from(laurels__title_accent_star.current, { opacity: 0, duration: 0.5 });
-    awardsContentAnim.from(laurels_titleRef.current, { y: 100, opacity: 0, duration: 1 });
-    awardsContentAnim.from(laurels_contentRef.current, { x: -100, opacity: 0, duration: 1 });
+    awardsContentAnim.from(laurels_contentRef.current, { x: -100, opacity: 0, delay: 2, duration: 1 });
     awardsContentAnim.fromTo(dateClan_logoRef.current, { opacity: 0 }, { opacity: 0.3, duration: 1 });
 
     const awardsImges = document.querySelectorAll('.laurels__awards-img');
@@ -114,19 +109,7 @@ const Laurels = () => {
           </div>
         </div>
         <div className="hoshizora__laurels-content_wrapper">
-          <div className="hoshizora__laurels-title_wrapper">
-            <h1 ref={laurels_titleRef} className="headtext__yusei-magic">
-              Laurels
-            </h1>
-            <div ref={laurels__title_accent} className="title_accent-line">
-              <img
-                ref={laurels__title_accent_star}
-                className="laurels-accent_star"
-                src={images.sparkle1}
-                alt="title__accent_star"
-              ></img>
-            </div>
-          </div>
+          <MainHeading heading="Laurels" target={'.hoshizora__laurels'} />
           <div class="hoshizora__laurels-content" ref={laurels_contentRef}>
             <h2 className="p__yusei-magic">{award.title}</h2>
             <p className="p__kaisei-tokumin">{award.paragraph_one}</p>
