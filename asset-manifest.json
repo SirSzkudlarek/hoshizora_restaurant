@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hoshizora_restaurant/static/css/main.471c83ae.css",
-    "main.js": "/hoshizora_restaurant/static/js/main.b4218731.js",
+    "main.css": "/hoshizora_restaurant/static/css/main.21b61221.css",
+    "main.js": "/hoshizora_restaurant/static/js/main.bd5f2e5e.js",
     "static/media/headerIntroduction.png": "/hoshizora_restaurant/static/media/headerIntroduction.4f1b2929071575895f4d.png",
     "static/media/food_video.mp4": "/hoshizora_restaurant/static/media/food_video.d3dafad9d5fcdadc900a.mp4",
     "static/media/aboutUsPlate.png": "/hoshizora_restaurant/static/media/aboutUsPlate.f6fa2766b9e587013f59.png",
@@ -25,7 +25,7 @@
     "index.html": "/hoshizora_restaurant/index.html"
   },
   "entrypoints": [
-    "static/css/main.471c83ae.css",
-    "static/js/main.b4218731.js"
+    "static/css/main.21b61221.css",
+    "static/js/main.bd5f2e5e.js"
   ]
 }
