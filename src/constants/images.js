@@ -18,6 +18,10 @@ import mechelinThreeStars from '../assets/michelin_three_stars.jpg';
 import gaultMillau from '../assets/gault_millau.jpg';
 import tasteOfJapan from '../assets/taste_of_japan.jpg';
 import dateClanLogo from '../assets/date_clan.png';
+import galleryImg01 from '../assets/gallery_img01.jpg';
+import galleryImg02 from '../assets/gallery_img02.jpg';
+import galleryImg03 from '../assets/gallery_img03.jpg';
+import galleryImg04 from '../assets/gallery_img04.jpg';
 
 // eslint-disable-next-line
 export default {
@@ -41,4 +45,8 @@ export default {
   gaultMillau,
   tasteOfJapan,
   dateClanLogo,
+  galleryImg01,
+  galleryImg02,
+  galleryImg03,
+  galleryImg04,
 };

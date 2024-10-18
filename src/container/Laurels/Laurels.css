@@ -25,6 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-self: center;
 }
 
 .laurels__gallery-info {
@@ -153,7 +154,7 @@ p {
   padding: 1rem 1.5rem;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
   .hoshizora__laurels {
     padding: 4rem 4rem !important;
   }
@@ -169,7 +170,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .hoshizora__laurels-wrapper {
     flex-direction: column-reverse;
     gap: 5rem;
@@ -202,7 +203,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hoshizora__laurels {
     padding: 2rem 2rem 4rem 2rem !important;
   }
