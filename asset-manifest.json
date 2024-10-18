@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/hoshizora_restaurant/static/css/main.343b320a.css",
-    "main.js": "/hoshizora_restaurant/static/js/main.8df8820c.js",
+    "main.css": "/hoshizora_restaurant/static/css/main.471c83ae.css",
+    "main.js": "/hoshizora_restaurant/static/js/main.b4218731.js",
     "static/media/headerIntroduction.png": "/hoshizora_restaurant/static/media/headerIntroduction.4f1b2929071575895f4d.png",
     "static/media/food_video.mp4": "/hoshizora_restaurant/static/media/food_video.d3dafad9d5fcdadc900a.mp4",
     "static/media/aboutUsPlate.png": "/hoshizora_restaurant/static/media/aboutUsPlate.f6fa2766b9e587013f59.png",
     "static/media/chef__background.jpg": "/hoshizora_restaurant/static/media/chef__background.18191386c52ed90b34f9.jpg",
+    "static/media/gallery_img03.jpg": "/hoshizora_restaurant/static/media/gallery_img03.5515fe2d2b622a90da78.jpg",
     "static/media/section__gradient.png": "/hoshizora_restaurant/static/media/section__gradient.ba4a5ff6e10686c85a04.png",
     "static/media/chef.jpg": "/hoshizora_restaurant/static/media/chef.ddd095671f264f33ef55.jpg",
+    "static/media/gallery_img01.jpg": "/hoshizora_restaurant/static/media/gallery_img01.a793260a72b24ceecb3c.jpg",
     "static/media/old__restaurant.jpg": "/hoshizora_restaurant/static/media/old__restaurant.24d10017b948327440b1.jpg",
+    "static/media/gallery_img04.jpg": "/hoshizora_restaurant/static/media/gallery_img04.25c2a50d251705afa4c0.jpg",
+    "static/media/gallery_img02.jpg": "/hoshizora_restaurant/static/media/gallery_img02.33482ab9614b7dc3d4f9.jpg",
     "static/media/section__gradient2.png": "/hoshizora_restaurant/static/media/section__gradient2.8f9411a072b504a193b4.png",
     "static/media/section__gradient3.png": "/hoshizora_restaurant/static/media/section__gradient3.707e8ae70f22b951251f.png",
     "static/media/taste_of_japan.jpg": "/hoshizora_restaurant/static/media/taste_of_japan.79a2d07875cda33eb724.jpg",
@@ -21,7 +25,7 @@
     "index.html": "/hoshizora_restaurant/index.html"
   },
   "entrypoints": [
-    "static/css/main.343b320a.css",
-    "static/js/main.8df8820c.js"
+    "static/css/main.471c83ae.css",
+    "static/js/main.b4218731.js"
   ]
 }
