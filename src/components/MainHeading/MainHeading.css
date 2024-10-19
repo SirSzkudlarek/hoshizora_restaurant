@@ -31,6 +31,21 @@
   height: 56px;
 }
 
+.main_heading-accent_star-smaller {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(-45%);
+  width: 37px;
+  height: 42px;
+}
+
+.headtext__yusei-magic-small {
+  font-size: 30px !important;
+  text-align: center !important;
+  line-height: 37.2px !important;
+}
+
 @media screen and (max-width: 440px) {
   .main_heading-title_wrapper {
     margin: 1rem 0 1.5rem 0;

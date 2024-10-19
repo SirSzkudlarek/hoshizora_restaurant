@@ -8,7 +8,15 @@ import { images } from '../../constants';
 import './MainHeading.css';
 gsap.registerPlugin(ScrollTrigger);
 
-const MainHeading = ({ heading, target, accent_line_duration, star_duration, heading_duration, title_delay }) => {
+const MainHeading = ({
+  heading,
+  target,
+  small,
+  accent_line_duration,
+  star_duration,
+  heading_duration,
+  title_delay,
+}) => {
   const titleRef = useRef();
   const title_accent = useRef();
   const title_accent_star = useRef();
@@ -41,14 +49,14 @@ const MainHeading = ({ heading, target, accent_line_duration, star_duration, hea
   });
 
   return (
-    <div className="main_heading-title_wrapper">
-      <h1 ref={titleRef} className="headtext__yusei-magic">
+    <div className="main_heading-title_wrapper" style={small && { margin: '0 auto 1rem auto' }}>
+      <h1 ref={titleRef} className={`headtext__yusei-magic ${small && 'headtext__yusei-magic-small'}`}>
         {heading}
       </h1>
       <div ref={title_accent} className="title_accent-line">
         <img
           ref={title_accent_star}
-          className="main_heading-accent_star"
+          className={small ? 'main_heading-accent_star-smaller' : 'main_heading-accent_star'}
           src={images.sparkle1}
           alt="title__accent_star"
         ></img>
