@@ -29,7 +29,7 @@
 }
 
 .hoshizora__navbar-links li:hover {
-  color: var(--color-grey);
+  color: var(--color_golden);
 }
 
 .hoshizora__navbar-login {

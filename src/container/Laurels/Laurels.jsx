@@ -70,7 +70,7 @@ const Laurels = () => {
   });
 
   return (
-    <div className="hoshizora__laurels flex_center section__padding">
+    <div className="hoshizora__laurels flex_center section__padding" id="awards">
       <div className="hoshizora__laurels-wrapper">
         <div className="hoshizora__laurels-gallery">
           <h3 className="p__yusei-magic laurels__gallery-info">Click on award to read about it!</h3>

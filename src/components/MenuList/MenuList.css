@@ -109,3 +109,10 @@
     width: 20px;
   }
 }
+
+@media screen and (max-width: 374px) {
+  .hoshizora__menu-list-name {
+    max-width: 150px;
+    width: 100%;
+  }
+}
