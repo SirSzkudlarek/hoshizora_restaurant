@@ -36,11 +36,15 @@ const Menu = () => {
       });
     };
 
-    Observer.create({
-      target: '.hoshizora__menu',
-      type: 'wheel,touch',
-      onUp: () => animationUp(),
-      onDown: () => animationDown(),
+    const multiple_targets = ['.hoshizora__menu', '.hoshizora__aboutUs', '.hoshizora__chef'];
+
+    multiple_targets.forEach((current_target) => {
+      Observer.create({
+        target: current_target,
+        type: 'wheel,touch',
+        onUp: () => animationUp(),
+        onDown: () => animationDown(),
+      });
     });
   });
 

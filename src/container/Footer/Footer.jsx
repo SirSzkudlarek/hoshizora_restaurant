@@ -1,34 +1,127 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { MainHeading } from '../../components';
 import { images } from '../../constants';
 import { FaFacebook, FaInstagram, FaXTwitter, FaTiktok } from 'react-icons/fa6';
 import './Footer.css';
 
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const animsScrollTrigger = {
+  scrollTrigger: {
+    trigger: '.hoshizora__footer',
+    start: 'top 75%', // when the top of the trigger hits the top of the viewport
+  },
+};
+
 const Footer = () => {
+  const footer_contact_qouteRef = useRef();
+  const footer_find_usRef = useRef();
+  const contact_spacer_oneRef = useRef();
+  const footer_questionRef = useRef();
+  const contact_spacer_twoRef = useRef();
+  const footer_mailRef = useRef();
+
+  const footer_socials_qouteRef = useRef();
+  const footer_visit_usRef = useRef();
+  const socials_spacer_oneRef = useRef();
+  const footer_socialRef = useRef();
+  const socials_spacer_twoRef = useRef();
+  const footer_bookRef = useRef();
+
+  useGSAP(() => {
+    const contactAnim = gsap.timeline({ ...animsScrollTrigger });
+    contactAnim.from(footer_contact_qouteRef.current, {
+      x: -100,
+      opacity: 0,
+      delay: 2,
+      duration: 0.5,
+    });
+    contactAnim.from(footer_find_usRef.current, {
+      x: -100,
+      opacity: 0,
+      duration: 0.5,
+    });
+    contactAnim.from(contact_spacer_oneRef.current, {
+      opacity: 0,
+      duration: 0.25,
+    });
+    contactAnim.from(footer_questionRef.current, {
+      x: -100,
+      opacity: 0,
+      duration: 0.5,
+    });
+    contactAnim.from(contact_spacer_twoRef.current, {
+      opacity: 0,
+      duration: 0.25,
+    });
+    contactAnim.from(footer_mailRef.current, {
+      x: -100,
+      opacity: 0,
+      duration: 0.5,
+    });
+
+    const socialsAnim = gsap.timeline({ ...animsScrollTrigger });
+    socialsAnim.from(footer_socials_qouteRef.current, {
+      x: 100,
+      opacity: 0,
+      delay: 2,
+      duration: 0.5,
+    });
+    socialsAnim.from(footer_visit_usRef.current, {
+      x: 100,
+      opacity: 0,
+      duration: 0.5,
+    });
+    socialsAnim.from(socials_spacer_oneRef.current, {
+      opacity: 0,
+      duration: 0.25,
+    });
+    socialsAnim.from(footer_socialRef.current, {
+      x: 100,
+      opacity: 0,
+      duration: 0.5,
+    });
+    socialsAnim.from(socials_spacer_twoRef.current, {
+      opacity: 0,
+      duration: 0.25,
+    });
+    socialsAnim.from(footer_bookRef.current, {
+      x: 100,
+      opacity: 0,
+      duration: 0.5,
+    });
+  });
+
   return (
     <div className="hoshizora__footer section__padding" id="contact">
       <div className="hoshizora__footer-info">
         <MainHeading heading="Contact" target={'.hoshizora__footer'} small={true} />
-        <p className="p__yusei-magic">Experience authentic Japanese cuisine under the stars.</p>
-        <div className="footer__content-wrapper">
+        <p ref={footer_contact_qouteRef} className="p__yusei-magic">
+          Experience authentic Japanese cuisine under the stars.
+        </p>
+        <div ref={footer_find_usRef} className="footer__content-wrapper">
           <p className="p__kaisei-tokumin">
             <strong>You can find us here!</strong>
           </p>
           <p className="p__kaisei-tokumin">123 Sushi St, Tokyo, Japan</p>
         </div>
 
-        <div className="footer__content-spacer"></div>
+        <div ref={contact_spacer_oneRef} className="footer__content-spacer"></div>
 
-        <div className="footer__content-wrapper">
+        <div ref={footer_questionRef} className="footer__content-wrapper">
           <p className="p__kaisei-tokumin">
             <strong>Want to ask us question?</strong>
           </p>
           <p className="p__kaisei-tokumin">+81 123 456 789</p>
         </div>
 
-        <div className="footer__content-spacer"></div>
+        <div ref={contact_spacer_twoRef} className="footer__content-spacer"></div>
 
-        <div className="footer__content-wrapper">
+        <div ref={footer_mailRef} className="footer__content-wrapper">
           <p className="p__kaisei-tokumin">
             <strong>Email us at:</strong>
           </p>
@@ -76,17 +169,19 @@ const Footer = () => {
 
       <div className="hoshizora__footer-info">
         <MainHeading heading="Socials & Book Table" target={'.hoshizora__footer'} small={true} />
-        <p className="p__yusei-magic">In every bite, a tale awaits; follow our journey, where passion creates.</p>
-        <div className="footer__content-wrapper">
+        <p ref={footer_socials_qouteRef} className="p__yusei-magic">
+          In every bite, a tale awaits; follow our journey, where passion creates.
+        </p>
+        <div ref={footer_visit_usRef} className="footer__content-wrapper">
           <p className="p__kaisei-tokumin">
             <strong>Serving hours:</strong>
           </p>
           <p className="p__kaisei-tokumin">Everyday from: 6am - to - 1am</p>
         </div>
 
-        <div className="footer__content-spacer"></div>
+        <div ref={socials_spacer_oneRef} className="footer__content-spacer"></div>
 
-        <div className="footer__content-wrapper">
+        <div ref={footer_socialRef} className="footer__content-wrapper">
           <p className="p__kaisei-tokumin">
             <strong>Visit our socials!</strong>
           </p>
@@ -106,9 +201,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer__content-spacer"></div>
+        <div ref={socials_spacer_twoRef} className="footer__content-spacer"></div>
 
-        <div className="footer__content-wrapper">
+        <div ref={footer_bookRef} className="footer__content-wrapper">
           <p className="p__kaisei-tokumin">
             <strong>Book your table, savor moments.</strong>
           </p>

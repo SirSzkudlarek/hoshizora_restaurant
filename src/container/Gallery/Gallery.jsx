@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const animsScrollTrigger = {
   scrollTrigger: {
-    trigger: '.hoshizora__laurels',
+    trigger: '.hoshizora__gallery',
     start: 'top 75%', // when the top of the trigger hits the top of the viewport
   },
 };
