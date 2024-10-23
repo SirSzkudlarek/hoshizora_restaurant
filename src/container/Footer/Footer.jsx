@@ -25,6 +25,11 @@ const Footer = () => {
   const contact_spacer_twoRef = useRef();
   const footer_mailRef = useRef();
 
+  const footer_titleRef = useRef();
+  const footer_accent_logoRef = useRef();
+  const footer_navRef = useRef();
+  const footer_newsletterRef = useRef();
+
   const footer_socials_qouteRef = useRef();
   const footer_visit_usRef = useRef();
   const socials_spacer_oneRef = useRef();
@@ -62,6 +67,29 @@ const Footer = () => {
       x: -100,
       opacity: 0,
       duration: 0.5,
+    });
+
+    const title_newsletterAnim = gsap.timeline({ ...animsScrollTrigger });
+    title_newsletterAnim.from(footer_titleRef.current, {
+      y: 100,
+      opacity: 0,
+      delay: 1,
+      duration: 0.5,
+    });
+    title_newsletterAnim.from(footer_accent_logoRef.current, {
+      opacity: 0,
+      duration: 0.25,
+    });
+    title_newsletterAnim.from(footer_navRef.current.querySelectorAll('.navigation_item_anim'), {
+      y: 30,
+      opacity: 0,
+      duration: 0.75,
+      stagger: 0.25,
+    });
+    title_newsletterAnim.from(footer_newsletterRef.current, {
+      y: 50,
+      opacity: 0,
+      duration: 0.75,
     });
 
     const socialsAnim = gsap.timeline({ ...animsScrollTrigger });
@@ -132,29 +160,31 @@ const Footer = () => {
       </div>
 
       <div className="hoshizora__footer-title">
-        <h2 className="headtext__yusei-magic">Hoshizora</h2>
-        <img src={images.menuAccent} alt="footer__accent"></img>
-        <div>
+        <h2 ref={footer_titleRef} className="headtext__yusei-magic">
+          Hoshizora
+        </h2>
+        <img ref={footer_accent_logoRef} src={images.menuAccent} alt="footer__accent"></img>
+        <div ref={footer_navRef}>
           <ul className="hoshizora__navbar-links">
-            <li className="p__kaisei-tokumin">
+            <li className="p__kaisei-tokumin navigation_item_anim">
               <a href="#home">Home</a>
             </li>
-            <li className="p__kaisei-tokumin">
+            <li className="p__kaisei-tokumin navigation_item_anim">
               <a href="#about">About</a>
             </li>
-            <li className="p__kaisei-tokumin">
+            <li className="p__kaisei-tokumin navigation_item_anim">
               <a href="#menu">Menu</a>
             </li>
-            <li className="p__kaisei-tokumin">
+            <li className="p__kaisei-tokumin navigation_item_anim">
               <a href="#awards">Awards</a>
             </li>
-            <li className="p__kaisei-tokumin">
+            <li className="p__kaisei-tokumin navigation_item_anim">
               <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
 
-        <div className="footer__newsletter">
+        <div ref={footer_newsletterRef} className="footer__newsletter">
           <p className="p__yusei-magic">Join our newsletter!</p>
           <div className="footer__accent-line"></div>
           <p className="p__kaisei-tokumin">Stay in touch with our seasonal menu and discounts!</p>
